@@ -1,8 +1,9 @@
 $background-color : #F8F8F8;
 $background-logo : #3D9E33;
-$background-btn : #867AEB;
+$background-btn : white;
 $color-h1 : #9E623A;
 $color-h2 : #EB8A4B;
+$color-h3 : black;
 $color-p : black;
 $font-h : 'Patrick Hand', cursive;
 $font-p : 'Roboto', sans-serif;
@@ -10,10 +11,18 @@ $font-p : 'Roboto', sans-serif;
 
 body{
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
+    background: $background-color;
 }
 a, p{
     font-family: $font-p;
+}
+a{
+    color: black;
+    text-decoration: none;
+    &:hover{
+        color: $background-logo;
+    }
 }
 p{
     color: $color-p;
@@ -26,6 +35,15 @@ h1{
 }
 h2{
     color: $color-h2;
+}
+.btn{
+    background: $background-btn;
+    width: 150px;
+    height: 70px;
+    border: 1px solid #867AEB;
+    &:hover{
+        color: $background-logo;
+    }
 }
 
 //header
@@ -47,10 +65,24 @@ h2{
     border: 1px solid grey;
     margin: 0;
 }
+//footer
+footer{
+    background: $background-logo;
+}
+//home
+.home-img-top{
+    background-image: url("../img/header-home.jpg"); 
+    height: 200px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
 
 
     // Medium devices (tablets, 768px and up)
     @media (min-width: 768px) { 
+        //header
         .header-logo{
             a{
                 img{
@@ -63,6 +95,10 @@ h2{
             margin-left: 30px;
             margin-right: 30px;
             }
+        }
+        //home
+        .home-img-top{
+            height: 400px; 
         }
     }
 
