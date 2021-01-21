@@ -1,4 +1,57 @@
 body {
   margin: 0;
+  overflow: hidden;
+}
+
+a, p {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  color: black;
+}
+
+h1, h2 {
+  font-family: "Patrick Hand", cursive;
+}
+
+h1 {
+  color: #9E623A;
+}
+
+h2 {
+  color: #EB8A4B;
+}
+
+.header-logo {
+  background: #3D9E33;
+}
+
+.header-logo a img {
+  padding: 4%;
+  width: 300px;
+  height: auto;
+}
+
+.navbar-collapse {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.nav-line {
+  width: 100%;
+  border: 1px solid grey;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .header-logo a img {
+    width: 500px;
+  }
+  .navbar-collapse .nav-link {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
