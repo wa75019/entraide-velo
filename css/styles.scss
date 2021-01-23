@@ -1,8 +1,10 @@
 $background-color : #F8F8F8;
 $background-logo : #3D9E33;
 $background-btn : white;
-$color-h1 : #9E623A;
-$color-h2 : #EB8A4B;
+$background-contact : #EB8A4B;
+$border-btn : #867AEB;
+$color-h1 : black;
+$color-h2 : black;
 $color-h3 : black;
 $color-p : black;
 $font-h : 'Patrick Hand', cursive;
@@ -40,7 +42,7 @@ h2{
     background: $background-btn;
     width: 150px;
     height: 70px;
-    border: 1px solid #867AEB;
+    border: 1px solid $border-btn;
     &:hover{
         color: $background-logo;
     }
@@ -77,7 +79,9 @@ footer{
     background-repeat: no-repeat; 
     background-size: cover;
 }
-
+.container-contact{
+    background: $background-contact;
+}
 
 
     // Medium devices (tablets, 768px and up)
@@ -99,6 +103,11 @@ footer{
         //home
         .home-img-top{
             height: 400px; 
+        }
+        .contact-home{
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 

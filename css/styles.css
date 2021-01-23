@@ -26,11 +26,11 @@ h1, h2 {
 }
 
 h1 {
-  color: #9E623A;
+  color: black;
 }
 
 h2 {
-  color: #EB8A4B;
+  color: black;
 }
 
 .btn {
@@ -78,6 +78,10 @@ footer {
   background-size: cover;
 }
 
+.container-contact {
+  background: #EB8A4B;
+}
+
 @media (min-width: 768px) {
   .header-logo a img {
     width: 500px;
@@ -88,6 +92,11 @@ footer {
   }
   .home-img-top {
     height: 400px;
+  }
+  .contact-home {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /*# sourceMappingURL=styles.css.map */
