@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entraide vélo - événements</title>
+    <title>Entraide véol - espace réparateurs</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
@@ -13,6 +13,7 @@
 
 </head>
 <body>
+
     <header>
         <!--logo-->
         <div class="header-logo d-flex justify-content-center">
@@ -28,51 +29,42 @@
                 <div class="navbar-nav">
                   <a class="nav-link" href="index.html">HOME</a>
                   <a class="nav-link" href="aide-live.html">AIDE - LIVE</a>
-                  <a class="nav-link active" aria-current="page" href="#">EVENEMENTS</a>
-                  <a class="nav-link" href="tutos.html">TUTOS - REPARATION</a>
-                  <a class="nav-link" href="login.html">ESPACE REPARATEURS</a>
+                  <a class="nav-link" href="evenements.html">EVENEMENTS</a>
+                  <a class="nav-link" href="evenements.html">TUTOS - REPARATION</a>
+                  <a class="nav-link active" aria-current="page" href="#">ESPACE REPARATEURS</a>
                 </div>
               </div>
             </div>
           </nav>
           <hr class="nav-line">
     </header>
-    <main>
-        <!--title-page-->
-    <div class="title-page text-center mt-5 mb-5">
-        <h1>EVENEMENTS</h1>
-    </div>
-    <!--content evenements-->
-    <div class="container mb-5">
-        <h2 class="mb-5 text-center">Evénements en cours :</h2>
-        <!--En cours-->
-        <!--Card-->
-        <div class="card mb-5" style="width: 100%;">
-            <div class="img-card-evnt"></div>
-            <div class="card-body">
-              <h2 class="card-title text-center">Randonnée des entraideurs</h2>
-              <h3 class="card-text text-center"> le 21/02/2021 dans la forêt de Fontainebleau</h3>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item" style="color: red;">Attention limité aux 20 premiers inscrits !</li>
-              <li class="list-group-item text-center">Inscriptions dans la rubrique contact de la page "home"</li>
-            </ul>
-            <div class="card-body text-center">
-                <button class="btn mb-5"><a href="index.html">HOME</a></button>
-            </div>
-          </div>
-        <!--Passé-->
-        <h2 class="mb-5 text-center">Evénements passés :</h2>
-        <div class="card" style="width: 100%;">
-            <div class="img-card-evnt"></div>
-            <div class="card-body">
-              <h2 class="card-title text-center">Randonnée des entraideurs</h2>
-              <h3 class="card-text text-center"> le 25/11/2020 dans la forêt de Fontainebleau</h3>
-            </div>
-        </div>
 
-        
-    </div>
+    <main style="height: 60vh;">
+        <!--title-->
+        <div class="title-page text-center mt-5 mb-5">
+            <h1>ESPACE - REPARATEURS</h1>
+        </div>
+        <!--content tutos-->
+            <div class="container mb-5">
+                <!--form password-->
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Mail</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">Votre adresse mail restera confidentielle.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Mot de passe</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Rester connecté</label>
+                    </div>
+                    <button type="submit" class="btn">Envoyer</button>
+                  </form>
+            
+            </div>
 
 
 
@@ -105,13 +97,13 @@
                     <a href="aide-live.html" class="text-dark">Aide - live</a>
                 </li>
                 <li>
-                    <a href="#" class="text-dark">Evenements</a>
+                    <a href="evenements.html" class="text-dark">Evenements</a>
                 </li>
                 <li>
-                    <a href="tutos.html" class="text-dark">Tutos réparations</a>
+                    <a href="evenements.html" class="text-dark">Tutos réparations</a>
                 </li>
                 <li>
-                    <a href="login.html" class="text-dark">Espace réparateurs</a>
+                    <a href="#" class="text-dark">Espace réparateurs</a>
                 </li>
             </ul>
             </div>
@@ -135,14 +127,6 @@
 
 
 
-
-
-
-
-
-
-
-
-    <script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>    
 </body>
 </html>
