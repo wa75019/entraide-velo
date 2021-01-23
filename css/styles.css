@@ -82,6 +82,16 @@ footer {
   background: #EB8A4B;
 }
 
+.form-check {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aide-img {
+  width: 100%;
+  height: auto;
+}
+
 @media (min-width: 768px) {
   .header-logo a img {
     width: 500px;
